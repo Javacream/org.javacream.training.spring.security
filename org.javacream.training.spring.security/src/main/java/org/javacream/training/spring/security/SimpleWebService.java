@@ -1,14 +1,12 @@
 package org.javacream.training.spring.security;
 
-import javax.annotation.security.RolesAllowed;
-
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/api")
 public class SimpleWebService {
 
     @RequestMapping(value = "/anonymous", method = RequestMethod.GET)
@@ -16,7 +14,7 @@ public class SimpleWebService {
         return ResponseEntity.ok("Hello Anonymous");
     }
 
-    @RolesAllowed("javacream_users")
+//    @RolesAllowed("user")
     @RequestMapping(value = "/user", method = RequestMethod.GET)
     public ResponseEntity<String> getUser() {
         return ResponseEntity.ok("Hello User");
