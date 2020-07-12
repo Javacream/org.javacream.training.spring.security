@@ -1,5 +1,21 @@
 # org.javacream.training.spring.security
 Samples using Spring Boot and Spring Security
+## Seminarinformationen Durchführung 13.-14.7.2020 in Leipzig
+
+* Referent: Rainer Sawitzki, eMail: training@rainer-sawitzki.de
+
+* Beispiele
+  * https://github.com/Javacream/org.javacream.training.security
+    *  Branch davaso-13.7.2020
+* Digitales Flipchart
+  * https://docs.google.com/presentation/d/1lTgQJZruRASR95a3zCKnpsQJMFKUieYvLobSu1cZmb0/edit?usp=sharing
+* Seminarzeiten
+  * 8 Unterrichtseinheiten mit jeweils etwa 90 Minuten
+  * Mittagspause 45’, Kaffeepausen nach Bedarf
+  * Vorschlag: Pausenzeit gesamt etwa 1:00h
+  * Zeitplan 
+    * Mo.: 9:00-17:00
+    * Di.: 9:00-15:00
 
 ## Common Security Themes
 
