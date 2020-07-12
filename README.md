@@ -22,8 +22,8 @@ Samples using Spring Boot and Spring Security
 ### Play around with WebGoat 7.1 using docker
 
 * `docker pull webgoat/webgoat-7.1`
-* `docker run -p 8080:8080 -d --name webgoat-7.1 -v webgoat-7.1:/tmp webgoat/webgoat-7.1`
-* open `http://localhost:8080/WebGoat` and worh through the training labs
+* `docker run -p 10080:8080 -d --name webgoat-7.1 -v webgoat-7.1:/tmp webgoat/webgoat-7.1`
+* open `http://localhost:10080/WebGoat` and work through the training labs
 
 ### Play around with WebGoat 8 and WebWolf using docker
 
