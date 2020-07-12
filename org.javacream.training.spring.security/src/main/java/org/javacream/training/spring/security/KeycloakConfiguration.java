@@ -18,7 +18,7 @@ import org.springframework.security.web.authentication.session.SessionAuthentica
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(jsr250Enabled = true)
+@EnableGlobalMethodSecurity(jsr250Enabled = true, securedEnabled = true)
 public class KeycloakConfiguration extends KeycloakWebSecurityConfigurerAdapter {
 
     @Override
