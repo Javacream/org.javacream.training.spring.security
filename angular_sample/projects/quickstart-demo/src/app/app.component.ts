@@ -27,7 +27,7 @@ export class AppComponent {
   get userName(): string {
     const claims = this.oauthService.getIdentityClaims();
     if (!claims) return null;
-    return claims['preferred_username'];
+    return claims['name'];
   }
 
   get idToken(): string {
