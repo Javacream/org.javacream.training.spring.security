@@ -15,13 +15,13 @@ public class SimpleWebService {
         return ResponseEntity.ok("Hello Anonymous");
     }
 
-    @Secured("ROLE_user")
+    @Secured("ROLE_USER")
     @RequestMapping(value = "/user", method = RequestMethod.GET)
     public ResponseEntity<String> getUser() {
         return ResponseEntity.ok("Hello User");
     }
 
-    @Secured("ROLE_admin")
+    @Secured("ROLE_ADMIN")
     @RequestMapping(value = "/admin", method = RequestMethod.GET)
     public ResponseEntity<String> getAdmin() {
         return ResponseEntity.ok("Hello Admin");
