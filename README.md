@@ -1,7 +1,7 @@
 # org.javacream.training.spring.security
 Samples using Spring Boot and Spring Security
 
-## Durchführung des Seminars vom 20.-23.10.2020
+## Durchführung des Seminars vom 20.-22.10.2020
 
 * Referent: Rainer Sawitzki, eMail: training@rainer-sawitzki.de
 
