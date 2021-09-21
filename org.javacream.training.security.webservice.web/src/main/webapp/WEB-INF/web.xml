@@ -4,4 +4,23 @@
 	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	metadata-complete="false" version="3.0">
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>User</web-resource-name>
+			<url-pattern>/api/user</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>user</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<security-role>
+		<description>
+			The user role
+		</description>
+		<role-name>user</role-name>
+	</security-role>
+	<login-config>
+		<auth-method>SPNEGO</auth-method>
+		<realm-name>Tomcat Manager Application</realm-name>
+	</login-config>
 </web-app>
