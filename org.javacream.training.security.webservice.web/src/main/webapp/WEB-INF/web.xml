@@ -13,14 +13,29 @@
 			<role-name>user</role-name>
 		</auth-constraint>
 	</security-constraint>
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Admin</web-resource-name>
+			<url-pattern>/api/admin</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
 	<security-role>
 		<description>
 			The user role
 		</description>
 		<role-name>user</role-name>
 	</security-role>
+	<security-role>
+		<description>
+			The admin role
+		</description>
+		<role-name>admin</role-name>
+	</security-role>
 	<login-config>
-		<auth-method>SPNEGO</auth-method>
+		<auth-method>BASIC</auth-method>
 		<realm-name>Tomcat Manager Application</realm-name>
 	</login-config>
 </web-app>
