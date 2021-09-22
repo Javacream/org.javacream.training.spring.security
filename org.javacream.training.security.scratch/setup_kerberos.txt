@@ -1,0 +1,19 @@
+docker run -d --name krb5 -e KRB5_REALM=JAVACREAM.ORG -e KRB5_KDC=localhost -e KRB5_PASS=admin123! -p 88:88 -p 464:464 -p 749:749 -v /root/kerberos/keytabs:/keytabs gcavalcante8808/krb5-server
+docker exec -it krb5 /bin/sh
+bin/sh
+	kadmin.local
+		addprinc javacream/test
+			javacream123!
+		addprinc client/localhost
+			client123!
+		addprinc HTTP/localhost
+			http123!
+		addprinc HTTP/tomcat/localhost
+			tomcat123!
+	ktutil
+		Create Keytab for example
+			add_entry -password -p client/localhost -k 1 -e aes256-cts-hmac-sha1-96
+			add_entry -password -p HTTP/localhost -k 1 -e aes256-cts-hmac-sha1-96
+		Create Tomcat Keytab
+			add_entry -password -p HTTP/tomcat/localhost -k 1 -e aes256-cts-hmac-sha1-96
+		
