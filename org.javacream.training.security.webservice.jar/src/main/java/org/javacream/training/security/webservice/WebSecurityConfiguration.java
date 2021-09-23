@@ -36,7 +36,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http
+		http.exceptionHandling().authenticationEntryPoint(spnegoEntryPoint()).and()
         .addFilterBefore(
             spnegoAuthenticationProcessingFilter(),
             BasicAuthenticationFilter.class);
@@ -44,7 +44,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 	@Bean
 	public SpnegoEntryPoint spnegoEntryPoint() {
-		return new SpnegoEntryPoint("/");
+		return new SpnegoEntryPoint();
 	}
 
 	@Bean
