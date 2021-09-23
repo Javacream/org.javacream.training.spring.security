@@ -35,7 +35,7 @@
 		<role-name>admin</role-name>
 	</security-role>
 	<login-config>
-		<auth-method>SPNEGO</auth-method>
+		<auth-method>BASIC</auth-method>
 		<realm-name>Tomcat Manager Application</realm-name>
 	</login-config>
 </web-app>
