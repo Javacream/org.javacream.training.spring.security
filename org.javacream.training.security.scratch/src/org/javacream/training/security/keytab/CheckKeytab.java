@@ -34,8 +34,8 @@ public class CheckKeytab {
 
 		if (propertiesFileName == null) {
 			// optionMap.put("ticketCache", "/tmp/krb5cc_1000");
-			optionMap.put("keyTab", "LOCATION");
-			optionMap.put("principal", "PRINCIPAL"); // default realm
+			optionMap.put("keyTab", "/home/rainersawitzki/teilnehmer.keytab");
+			optionMap.put("principal", "teilnehmer"); // default realm
 
 			optionMap.put("doNotPrompt", "true");
 			optionMap.put("refreshKrb5Config", "true");

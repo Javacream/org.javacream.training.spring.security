@@ -43,7 +43,7 @@ public class CheckAuthentication {
 
 		if (propertiesFileName == null) {
 			// optionMap.put("ticketCache", "/tmp/krb5cc_1000");
-			optionMap.put("principal", "CHANGE"); // default realm
+			optionMap.put("principal", "teilnehmer"); // default realm
 
 			optionMap.put("doNotPrompt", "false");
 			optionMap.put("refreshKrb5Config", "true");
