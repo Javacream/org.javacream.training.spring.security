@@ -42,6 +42,31 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>copy-installed</id>
+              <phase>install</phase>
+              <goals>
+                <goal>copy</goal>
+              </goals>
+              <configuration>
+                <artifactItems>
+                  <artifactItem>
+                  <destFileName>webservice.war</destFileName>
+                    <groupId>${project.groupId}</groupId>
+                    <artifactId>${project.artifactId}</artifactId>
+                    <version>${project.version}</version>
+                    <type>${project.packaging}</type>
+                  </artifactItem>
+                </artifactItems>
+                <outputDirectory>/home/rainersawitzki/_training/tools/apache-tomcat-9.0.53/webapps</outputDirectory>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
 		</plugins>
 	</build>
 

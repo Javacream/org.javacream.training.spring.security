@@ -1,0 +1,21 @@
+curl http://localhost:8080/webservice/api/anonymous
+	Hello Anonymous
+curl -u user:user123 http://localhost:8080/webservice/api/anonymous
+	Hello Anonymous
+curl -u admin:admin123 http://localhost:8080/webservice/api/anonymous
+	Hello Anonymous
+
+curl http://localhost:8080/webservice/api/user
+	401
+curl -u javacream_user:user123! http://localhost:8080/webservice/api/user
+	Hello User
+curl -u javacream_admin:admin123! http://localhost:8080/webservice/api/user
+	Hello User
+	
+curl http://localhost:8080/webservice/api/admin
+	401
+curl -u javacream_user:user123! http://localhost:8080/webservice/api/admin
+	401
+curl -u javacream_admin:admin123! http://localhost:8080/webservice/api/admin
+	Hello Admin
+	
