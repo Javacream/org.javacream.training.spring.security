@@ -10,10 +10,14 @@ bin/sh
 			http123!
 		addprinc HTTP/tomcat/localhost
 			tomcat123!
+		addprinc HTTP/localhost
+			tomcat123!
 	ktutil
 		Create Keytab for example
 			add_entry -password -p client/localhost -k 1 -e aes256-cts-hmac-sha1-96
 			add_entry -password -p HTTP/localhost -k 1 -e aes256-cts-hmac-sha1-96
 		Create Tomcat Keytab
 			add_entry -password -p HTTP/tomcat/localhost -k 1 -e aes256-cts-hmac-sha1-96
+		Create Tomcat Keytab
+			add_entry -password -p HTTP/localhost -k 1 -e aes256-cts-hmac-sha1-96
 		

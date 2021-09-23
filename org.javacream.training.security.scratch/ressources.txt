@@ -1,0 +1,12 @@
+Spring Security & Kerberos
+https://www.baeldung.com/spring-security-kerberos-integration 
+https://github.com/eugenp/tutorials/tree/master/spring-security-modules/spring-security-oauth2-sso/spring-security-sso-kerberos
+
+MiniKdc
+https://docs.spring.io/spring-security-kerberos/docs/current/api/org/springframework/security/kerberos/test/MiniKdc.html
+
+Spring Security Kerberos
+https://docs.spring.io/spring-security-kerberos/docs/1.0.1.RELEASE/reference/htmlsingle/#springsecuritykerberos
+https://www.baeldung.com/spring-security-kerberos
+
+

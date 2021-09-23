@@ -1,0 +1,21 @@
+curl http://localhost:9090/api/anonymous
+	Hello Anonymous
+curl -u user:user123 http://localhost:9090/api/anonymous
+	Hello Anonymous
+curl -u admin:admin123 http://localhost:9090/api/anonymous
+	Hello Anonymous
+
+curl http://localhost:9090/api/user
+	401
+curl -u user:user123 http://localhost:9090/api/user
+	Hello User
+curl -u admin:admin123 http://localhost:9090/api/user
+	Hello User
+	
+curl http://localhost:9090/api/admin
+	401
+curl -u user:user123 http://localhost:9090/api/admin
+	401
+curl -u admin:admin123 http://localhost:9090/api/admin
+	Hello Admin
+	

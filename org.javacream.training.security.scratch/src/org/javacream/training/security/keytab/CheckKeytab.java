@@ -34,8 +34,8 @@ public class CheckKeytab {
 
 		if (propertiesFileName == null) {
 			// optionMap.put("ticketCache", "/tmp/krb5cc_1000");
-			optionMap.put("keyTab", "/home/rainersawitzki/tomcat3.keytab");
-			optionMap.put("principal", "HTTP/tomcat/localhost@JAVACREAM.ORG"); // default realm
+			optionMap.put("keyTab", "/home/rainersawitzki/tomcat_service.keytab");
+			optionMap.put("principal", "HTTP/localhost@JAVACREAM.ORG"); // default realm
 
 			optionMap.put("doNotPrompt", "true");
 			optionMap.put("refreshKrb5Config", "true");
