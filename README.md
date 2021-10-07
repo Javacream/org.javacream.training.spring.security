@@ -6,7 +6,7 @@ Samples using Spring Boot and Spring Security
 * Referent: Rainer Sawitzki, eMail: training@rainer-sawitzki.de
 
 * Beispiele
-  * https://github.com/Javacream/org.javacream.training.security
+  * https://github.com/Javacream/org.javacream.training.spring.security
     *  Branch huk_23.9.2021
     
 * Digitales Flipchart
