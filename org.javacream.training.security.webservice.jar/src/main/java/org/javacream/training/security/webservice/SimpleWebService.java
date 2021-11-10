@@ -1,6 +1,7 @@
 package org.javacream.training.security.webservice;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,11 +15,13 @@ public class SimpleWebService {
 		return ResponseEntity.ok("Hello Anonymous");
 	}
 
+	@Secured("ROLE_USER")
 	@RequestMapping(value = "/user", method = RequestMethod.GET)
 	public ResponseEntity<String> getUser() {
 		return ResponseEntity.ok("Hello User");
 	}
 
+	@Secured("ROLE_ADMIN")
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public ResponseEntity<String> getAdmin() {
 		return ResponseEntity.ok("Hello Admin");
