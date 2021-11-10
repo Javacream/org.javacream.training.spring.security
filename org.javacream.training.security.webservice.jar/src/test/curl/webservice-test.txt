@@ -1,0 +1,22 @@
+#just a scratch, REST is configured to use form login...
+
+curl -X GET http://localhost:9090/api/anonymous
+	200
+curl -X GET http://localhost:9090/api/user
+	403
+curl -X GET http://localhost:9090/api/admin
+	403
+
+curl -X GET -u user:password http://localhost:9090/api/anonymous
+	200
+curl -X GET -u user:password http://localhost:9090/api/user
+	200
+curl -X GET -u user:password http://localhost:9090/api/admin
+	403
+
+curl -X GET -u admin:password http://localhost:9090/api/anonymous
+	200
+curl -X GET -u admin:password http://localhost:9090/api/user
+	200
+curl -X GET -u admin:password http://localhost:9090/api/admin
+	200
