@@ -1,13 +1,13 @@
-package org.javacream.training.security.webservice;
+package org.javacream.training.security.jwtservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class JwtTokenServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(JwtTokenServerApplication.class, args);
 	}
 
 }
